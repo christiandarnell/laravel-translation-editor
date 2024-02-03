@@ -1,65 +1,65 @@
 {
-    "name": "exolnet/laravel-translation-editor",
-    "description": "Allow translation edition through the browser",
-    "keywords": [
-        "exolnet",
-        "laravel",
-        "translation"
-    ],
-    "homepage": "https://github.com/eXolnet/laravel-translation-editor",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandre D'Eschambeault",
-            "email": "adeschambeault@exolnet.com"
-        },
-        {
-            "name": "Maxime Mongeau",
-            "email": "mmongeau@exolnet.com"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "illuminate/console": "^9.0|^10.0",
-        "illuminate/contracts": "^9.0|^10.0",
-        "illuminate/http": "^9.0|^10.0",
-        "illuminate/support": "^9.0|^10.0",
-        "illuminate/routing": "^9.0|^10.0",
-        "illuminate/translation": "^9.0|^10.0"
-    },
-    "require-dev": {
-        "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^7.0|^8.0",
-        "phpunit/phpunit": "^9.3.3",
-        "squizlabs/php_codesniffer": "^3.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "Exolnet\\Translation\\Editor\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Exolnet\\Translation\\Editor\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "lint": "vendor/bin/phpcs -p --standard=PSR12 --ignore=tests/TestFiles/* config src tests",
-        "lint:fix": "vendor/bin/phpcbf -p --standard=PSR12 --ignore=tests/TestFiles/* config src tests",
-        "test": "vendor/bin/phpunit",
-        "test:coverage": "vendor/bin/phpunit --coverage-html coverage"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Exolnet\\Translation\\Editor\\TranslationEditorServiceProvider"
-            ]
-        }
-    }
+	"name": "christiandarnell/laravel-translation-editor",
+	"description": "Allow translation edition through the browser",
+	"keywords": [
+		"exolnet",
+		"laravel",
+		"translation"
+	],
+	"homepage": "https://github.com/christiandarnell/laravel-translation-editor",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alexandre D'Eschambeault",
+			"email": "adeschambeault@exolnet.com"
+		},
+		{
+			"name": "Maxime Mongeau",
+			"email": "mmongeau@exolnet.com"
+		}
+	],
+	"require": {
+		"php": "^8.0",
+		"illuminate/console": "^9.0|^10.0",
+		"illuminate/contracts": "^9.0|^10.0",
+		"illuminate/http": "^9.0|^10.0",
+		"illuminate/support": "^9.0|^10.0",
+		"illuminate/routing": "^9.0|^10.0",
+		"illuminate/translation": "^9.0|^10.0"
+	},
+	"require-dev": {
+		"mockery/mockery": "^1.4",
+		"orchestra/testbench": "^7.0|^8.0",
+		"phpunit/phpunit": "^9.3.3",
+		"squizlabs/php_codesniffer": "^3.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"ChristianDarnell\\Translation\\Editor\\": "src/"
+		},
+		"files": [
+			"src/helpers.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"ChristianDarnell\\Translation\\Editor\\Tests\\": "tests"
+		}
+	},
+	"scripts": {
+		"lint": "vendor/bin/phpcs -p --standard=PSR12 --ignore=tests/TestFiles/* config src tests",
+		"lint:fix": "vendor/bin/phpcbf -p --standard=PSR12 --ignore=tests/TestFiles/* config src tests",
+		"test": "vendor/bin/phpunit",
+		"test:coverage": "vendor/bin/phpunit --coverage-html coverage"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"ChristianDarnell\\Translation\\Editor\\TranslationEditorServiceProvider"
+			]
+		}
+	}
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Exolnet\Translation\Editor\Exceptions;
+namespace ChristianDarnell\Translation\Editor\Exceptions;
 
 use RuntimeException;
 
 class TranslationEditorException extends RuntimeException
 {
-    //
+	//
 }
