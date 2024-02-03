@@ -20,7 +20,7 @@
 				'<div class="translation-editor__path">Key: <span id="translation-editor-path-label"></span></div>' +
 				'<div>' +
 				'<button type="button" class="translation-editor__default">Cancel</button> ' +
-				'<button type="button" class="translation-editor__primary">Save</button>' +
+				'<button type="button" class="translation-editor__primary">Save (Ctrl + Enter)</button>' +
 				'</div>' +
 				'</div>' +
 				'</div>';
@@ -30,21 +30,7 @@
 			});
 
 			editorElement.querySelector('.translation-editor__primary').addEventListener('click', function () {
-				var form = new FormData(document.getElementById('translation-editor-form'));
-
-				window.fetch('{baseRoute}/translation', {
-					method: 'POST',
-					body: form
-				})
-					.then(function (response) {
-						return response.json();
-					})
-					.then(function (json) {
-						$target.innerHTML = json.compiled;
-
-						editor().classList.remove('in');
-					});
-				location.reload();
+				save();
 			});
 
 			editorElement.querySelector('.translation-editor__dialog').addEventListener('click', function (e) {
@@ -62,7 +48,7 @@
 			super();
 
 			this.addEventListener('click', function (e) {
-				if (!e.altKey) {
+				if (!e.ctrlKey) {
 					return;
 				}
 
@@ -104,8 +90,29 @@
 	customElements.define('translation-editor', TranslationEditor);
 
 	var toggleHighlight = function (e) {
-		document.body.classList.toggle('translation-editor__highlight', e.altKey);
+		document.body.classList.toggle('translation-editor__highlight', e.ctrlKey);
+		if (e.ctrlKey && e.key === "Enter") {
+			save();
+		}
 	};
+
+	function save() {
+		var form = new FormData(document.getElementById('translation-editor-form'));
+
+		window.fetch('{baseRoute}/translation', {
+			method: 'POST',
+			body: form
+		})
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (json) {
+				$target.innerHTML = json.compiled;
+
+				editor().classList.remove('in');
+			});
+		location.reload();
+	}
 
 	document.addEventListener('keydown', toggleHighlight);
 	document.addEventListener('keyup', toggleHighlight);
