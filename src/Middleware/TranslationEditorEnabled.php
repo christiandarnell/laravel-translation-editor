@@ -8,12 +8,12 @@ use ChristianDarnell\Translation\Editor\TranslationEditor;
 class TranslationEditorEnabled
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor
 	 */
 	protected $translationEditor;
 
 	/**
-	 * @param \Exolnet\Translation\Editor\TranslationEditor $translationEditor
+	 * @param \ChristianDarnell\Translation\Editor\TranslationEditor $translationEditor
 	 */
 	public function __construct(TranslationEditor $translationEditor)
 	{

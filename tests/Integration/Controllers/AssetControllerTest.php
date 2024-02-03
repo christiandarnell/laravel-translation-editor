@@ -8,7 +8,7 @@ use ChristianDarnell\Translation\Editor\Tests\Integration\TestCase;
 class AssetControllerTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\Controllers\AssetController
+	 * @var \ChristianDarnell\Translation\Editor\Controllers\AssetController
 	 */
 	protected $assetController;
 

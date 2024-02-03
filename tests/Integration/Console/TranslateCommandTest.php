@@ -12,12 +12,12 @@ use Illuminate\Console\OutputStyle;
 class TranslateCommandTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor|\Mockery\MockInterface
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor|\Mockery\MockInterface
 	 */
 	protected $translationEditor;
 
 	/**
-	 * @var \Exolnet\Translation\Editor\Console\TranslateCommand
+	 * @var \ChristianDarnell\Translation\Editor\Console\TranslateCommand
 	 */
 	protected $translateCommand;
 

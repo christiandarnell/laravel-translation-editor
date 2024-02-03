@@ -34,7 +34,7 @@ class TranslateCommand extends Command
 	protected $description = 'Pass each translation variables to translate them';
 
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor
 	 */
 	protected $translationEditor;
 
@@ -44,7 +44,7 @@ class TranslateCommand extends Command
 	protected $variables = [];
 
 	/**
-	 * @param \Exolnet\Translation\Editor\TranslationEditor $translationEditor
+	 * @param \ChristianDarnell\Translation\Editor\TranslationEditor $translationEditor
 	 */
 	public function __construct(TranslationEditor $translationEditor)
 	{

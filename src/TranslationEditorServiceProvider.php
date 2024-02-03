@@ -72,7 +72,7 @@ class TranslationEditorServiceProvider extends ServiceProvider
 	protected function setupRoutes()
 	{
 		$routeConfig = [
-			'namespace' => 'Exolnet\\Translation\\Editor\\Controllers',
+			'namespace' => 'ChristianDarnell\\Translation\\Editor\\Controllers',
 			'prefix' => '_translation-editor',
 			'middleware' => [TranslationEditorEnabled::class],
 		];

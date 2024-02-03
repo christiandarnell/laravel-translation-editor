@@ -14,12 +14,12 @@ use Symfony\Component\Finder\Finder;
 class DetectCommandTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor|\Mockery\MockInterface
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor|\Mockery\MockInterface
 	 */
 	protected $translationEditor;
 
 	/**
-	 * @var \Exolnet\Translation\Editor\Console\DetectCommand
+	 * @var \ChristianDarnell\Translation\Editor\Console\DetectCommand
 	 */
 	protected $detectCommand;
 

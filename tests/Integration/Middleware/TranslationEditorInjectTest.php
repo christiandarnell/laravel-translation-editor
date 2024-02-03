@@ -12,12 +12,12 @@ use Symfony\Component\HttpFoundation\Response;
 class TranslationEditorInjectTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\Middleware\TranslationEditorInject
+	 * @var \ChristianDarnell\Translation\Editor\Middleware\TranslationEditorInject
 	 */
 	protected $translationEditorInject;
 
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor|\Mockery\LegacyMockInterface|\Mockery\MockInterface
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor|\Mockery\LegacyMockInterface|\Mockery\MockInterface
 	 */
 	protected $translationEditor;
 

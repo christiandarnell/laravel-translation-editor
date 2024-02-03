@@ -11,12 +11,12 @@ use Mockery as m;
 class TranslationControllerTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor|\Mockery\MockInterface
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor|\Mockery\MockInterface
 	 */
 	protected $translationEditor;
 
 	/**
-	 * @var \Exolnet\Translation\Editor\Controllers\TranslationController
+	 * @var \ChristianDarnell\Translation\Editor\Controllers\TranslationController
 	 */
 	protected $translationController;
 

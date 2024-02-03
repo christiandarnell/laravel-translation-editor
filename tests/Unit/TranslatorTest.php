@@ -8,7 +8,7 @@ use Mockery as m;
 
 class TranslatorTest extends UnitTest
 {
-	/** @var \Mockery\Mock|\Exolnet\Translation\Editor\Translator*/
+	/** @var \Mockery\Mock|\ChristianDarnell\Translation\Editor\Translator*/
 	private $translator;
 
 	public function setUp(): void

@@ -11,7 +11,7 @@ use Mockery as m;
 class TranslationEditorTest extends UnitTest
 {
 	/**
-	 * @var \Mockery\MockInterface|\Exolnet\Translation\Editor\TranslationEditor
+	 * @var \Mockery\MockInterface|\ChristianDarnell\Translation\Editor\TranslationEditor
 	 */
 	protected $editor;
 
@@ -21,7 +21,7 @@ class TranslationEditorTest extends UnitTest
 	protected $config;
 
 	/**
-	 * @var \Mockery\MockInterface|\Exolnet\Translation\Editor\Translator
+	 * @var \Mockery\MockInterface|\ChristianDarnell\Translation\Editor\Translator
 	 */
 	protected $translator;
 

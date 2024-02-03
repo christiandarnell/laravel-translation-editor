@@ -12,12 +12,12 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class TranslationEditorEnabledTest extends TestCase
 {
 	/**
-	 * @var \Exolnet\Translation\Editor\Middleware\TranslationEditorEnabled
+	 * @var \ChristianDarnell\Translation\Editor\Middleware\TranslationEditorEnabled
 	 */
 	protected $translationEditorEnabled;
 
 	/**
-	 * @var \Exolnet\Translation\Editor\TranslationEditor|\Mockery\LegacyMockInterface|\Mockery\MockInterface
+	 * @var \ChristianDarnell\Translation\Editor\TranslationEditor|\Mockery\LegacyMockInterface|\Mockery\MockInterface
 	 */
 	protected $translationEditor;
 
