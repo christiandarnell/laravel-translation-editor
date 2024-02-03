@@ -102,6 +102,9 @@ class TranslationEditor
 	public function getEditor($key, array $replace = [], $locale = null)
 	{
 		$translation = $this->getTranslation($key, $replace, $locale);
+		if (!auth()->user()) {
+			return $translation;
+		}
 		if (!auth()->user()->can('Översätta')) {
 			return $translation;
 		}
