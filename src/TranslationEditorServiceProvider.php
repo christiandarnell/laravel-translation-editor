@@ -61,7 +61,7 @@ class TranslationEditorServiceProvider extends ServiceProvider
 	 */
 	protected function registerBladeDirectives()
 	{
-		Blade::directive('te', function ($expression) {
+		Blade::directive('__te', function ($expression) {
 			return "<?php echo app('translation.editor')->get({$expression}); ?>";
 		});
 	}
